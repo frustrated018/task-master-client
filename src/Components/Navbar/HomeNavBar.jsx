@@ -1,13 +1,13 @@
 const navlinks = (
   <>
     <li>
-      <a>Home</a>
+      <a className="text-white">Home</a>
     </li>
     <li>
-      <a>Tasks</a>
+      <a className="text-white">Tasks</a>
     </li>
     <li>
-      <a>Completed Task</a>
+      <a className="text-white">Completed Task</a>
     </li>
   </>
 );
@@ -15,7 +15,7 @@ const navlinks = (
 const HomeNavBar = () => {
   return (
     <>
-      <div className="navbar bg-base-300">
+      <div className="navbar bg-opacity-90 backdrop-blur-md bg-gray-900 text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +50,10 @@ const HomeNavBar = () => {
           <button className="btn btn-md bg-blue-200">Login</button>
           <div className="avatar">
             <div className="w-10 rounded">
-              <img src="https://i.ibb.co/Yyn8B5K/512x512.png" alt="User Image"/>
+              <img
+                src="https://i.ibb.co/Yyn8B5K/512x512.png"
+                alt="User Image"
+              />
             </div>
           </div>
         </div>
