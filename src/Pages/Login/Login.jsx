@@ -59,7 +59,7 @@ const Login = () => {
         </form>
         <div className="mt-4 text-[18px] text-black">
           Don&apos;t have an account?{" "}
-          <a href="#" className="text-black underline hover:text-[#3DDEBF]">
+          <a href="/signup" className="text-black underline hover:text-[#3DDEBF]">
             Sign Up
           </a>
         </div>

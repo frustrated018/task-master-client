@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const navlinks = (
   <>
     <li>
@@ -46,8 +48,11 @@ const HomeNavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navlinks}</ul>
         </div>
+        {/* Login Button and User Profile */}
         <div className="navbar-end gap-2">
-          <button className="btn btn-md bg-blue-200">Login</button>
+          <Link to={"/login"}>
+            <button className="btn btn-md bg-blue-200">Login</button>
+          </Link>
           <div className="avatar">
             <div className="w-10 rounded">
               <img
