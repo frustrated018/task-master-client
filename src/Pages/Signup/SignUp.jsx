@@ -1,17 +1,18 @@
 import { FaTasks } from "react-icons/fa";
+import verticalBg from "../../assets/verticalbg.svg";
 
 const description = (
   <>
-    <a className="block text-[#22C55E]" href="/">
+    <a className="block text-white" href="/">
       <span className="sr-only">Home</span>
       <FaTasks size={40} />
     </a>
 
-    <h2 className="mt-6 text-2xl font-bold text-[#22C55E] sm:text-3xl md:text-4xl">
+    <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
       Welcome to Task Master!
     </h2>
 
-    <p className="mt-4 leading-relaxed text-[#22C55E]/90">
+    <p className="mt-4 leading-relaxed text-white/90">
       Welcome to Task Master! Elevate your productivity with our intuitive task
       management platform. Sign up today to organize your activities, set
       priorities, and achieve your goals effortlessly. Join a community
@@ -28,12 +29,9 @@ const SignUp = () => {
           <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
             <img
               alt="Night"
-              src="https://source.unsplash.com/white-calendar-Bc6qPj_f-r0"
+              src={verticalBg}
               className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
-
-            {/* Add black overlay */}
-            <div className="absolute inset-0 bg-black opacity-60"></div>
 
             <div className="hidden lg:relative lg:block lg:p-12">
               {description}
@@ -47,6 +45,9 @@ const SignUp = () => {
               </div>
 
               <form action="#" className="mt-8">
+                <h2 className="text-5xl text-center font-bold mb-8 text-white">
+                  Sign Up
+                </h2>
                 <div className="grid grid-cols-1 gap-6">
                   <section className="flex flex-col md:flex-row gap-6">
                     <div className="w-full md:w-1/2">
@@ -164,12 +165,14 @@ const SignUp = () => {
                     </button>
                   </div>
 
-                  <div className="mt-4 text-sm text-white">
+                  <div className="mt-4 text-base text-white">
                     Already have an account?{" "}
-                    <a href="/login" className="text-white underline">
+                    <a
+                      href="/login"
+                      className="text-white underline hover:text-[#21C45D]"
+                    >
                       Log in
                     </a>
-                    .
                   </div>
                 </div>
               </form>
